@@ -11,6 +11,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # x11-utils: contains xdpyinfo, which we use to know whether Xorg has started yet
 # pulseaudio-utils: some apps can't play sound unless this package is installed
 ARG REQUIRED_PACKAGES="\
+    mesa-vulkan-drivers mesa-vulkan-drivers:i386 \
     x11-utils \
     pulseaudio-utils \
     "
