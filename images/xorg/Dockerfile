@@ -19,7 +19,7 @@ ARG REQUIRED_PACKAGES=" \
     x11-xserver-utils xauth x11-common \
     xz-utils unzip avahi-utils dbus \
     mesa-utils mesa-utils-extra \
-    mesa-vulkan-drivers mesa-vulkan-drivers:i386 \
+    mesa-vulkan-drivers \
     vulkan-tools \
     libgl1-mesa-glx libgl1-mesa-dri libglu1-mesa \
     xserver-xorg-video-all \
