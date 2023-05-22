@@ -7,7 +7,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG REQUIRED_PACKAGES=" \
     wget p7zip-full \
     retroarch \
-    libretro* \
 "
 
 RUN apt-get update && \
@@ -15,6 +14,7 @@ RUN apt-get update && \
     # \
     # Install retroarch \
     add-apt-repository ppa:libretro/stable && \
+    apt-get update && \
     apt-get install -y --no-install-recommends $REQUIRED_PACKAGES && \
     # \
     # Cleanup \
