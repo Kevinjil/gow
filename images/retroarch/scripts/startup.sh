@@ -12,10 +12,6 @@ mkdir -p "$CFG_DIR/cores/"
 
 cp -u /cfg/retroarch.cfg "$CFG_DIR/retroarch.cfg"
 
-# Copy pre-installed cores from the retroarch ppa
-# shellcheck disable=SC2046
-cp -u /usr/lib/$(uname -m)-linux-gnu/libretro/* "$CFG_DIR/cores/"
-
 # if there are no assets, manually download them
 if [ ! -d "$CFG_DIR/assets" ]; then
     wget -q --show-progress -P /tmp https://buildbot.libretro.com/assets/frontend/assets.zip
