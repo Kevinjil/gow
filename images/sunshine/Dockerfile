@@ -10,6 +10,7 @@ FROM ${BASE_APP_IMAGE} AS sunshine
 ARG TARGETARCH TARGETVARIANT
 
 ARG REQUIRED_PACKAGES="\
+    libboost-chrono1.74.0 \
     libgbm1 libgles2-mesa libegl1 libgl1-mesa-dri \
     libvulkan1 \
     libvdpau1 libnuma1 \
